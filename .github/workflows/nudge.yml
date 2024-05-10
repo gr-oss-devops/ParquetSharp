@@ -2,7 +2,7 @@ name: Nudge
 
 on:
   workflow_run:
-    workflows: ["CodeQL"]
+    workflows: ["CI", "Build devcontainer image"]
     types: [completed]
     branches: [master]
 
